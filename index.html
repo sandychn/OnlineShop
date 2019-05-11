@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <title>Online Shop :: Home</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <img id="logo" src="image/logo.png" alt="Online Shop" width="300px" />
+      </header>
+      <nav>
+        <span id="useroptions">
+          <a href="#login">登录</a>&nbsp;&nbsp;&nbsp;
+          <a href="#register">注册</a>
+        </span>
+        <ul>
+          <li><a href="index.html">主　页</a></li>
+          <li><a href="#">种类 1</a></li>
+          <li><a href="#">种类 2</a></li>
+          <li><a href="#">种类 3</a></li>
+          <form id="ser" action="index.html" method="post">
+            <input
+              type="search"
+              name="search_keyword"
+              required="required"
+              placeholder="请输入搜索内容"
+              size="30"
+              maxlength="50"
+              autofocus="autofocus"
+            />
+            <input type="submit" value="搜  索" />
+          </form>
+        </ul>
+      </nav>
+      <main>
+        <img id="banner" src="image/banner.jpg" alt="banner" width="100%" />
+        <div class="items" id="item_first">
+          <span>part1</span>
+        </div>
+        <div class="items" id="item_second">
+          <span>part2</span>
+        </div>
+        <div class="items" id="item_third">
+          <span>part3</span>
+        </div>
+        <div class="items" id="item_fourth">
+          <span>part4</span>
+        </div>
+      </main>
+      <footer>
+        Copyright &copy; 2019. Online Shop All rights reserved.
+      </footer>
+    </div>
+  </body>
+</html>
