@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <script src="js/homebanner.js" type="text/javascript"></script>
     <title>Online Shop :: Home</title>
   </head>
-  <body>
+  <body onload="init()">
     <div id="wrapper">
       <header>
-        <img id="logo" src="image/logo.png" alt="Online Shop" width="300px" />
+        <a href="index.html">
+          <img id="logo" src="image/logo.png" alt="Online Shop" width="300px" />
+        </a>
       </header>
       <nav>
         <span id="useroptions">
@@ -22,7 +25,7 @@
           <li><a href="#">种类 1</a></li>
           <li><a href="#">种类 2</a></li>
           <li><a href="#">种类 3</a></li>
-          <form id="ser" action="index.html" method="post">
+          <form id="ser" action="index.html" method="GET">
             <input
               type="search"
               name="search_keyword"
@@ -36,8 +39,20 @@
           </form>
         </ul>
       </nav>
+      <div id="banner_box">
+        <a id="banner_link" href="#">
+          <img
+            id="banner_image"
+            src="image/banner_1.jpg"
+            alt="banner"
+          />
+          <span id="banner_description">
+            <span id="banner_description_header"></span><br />
+            <span id="banner_description_content"></span>
+          </span>
+        </a>
+      </div>
       <main>
-        <img id="banner" src="image/banner.jpg" alt="banner" width="100%" />
         <div class="items" id="item_first">
           <span>part1</span>
         </div>
@@ -52,8 +67,8 @@
         </div>
       </main>
       <footer>
-        Copyright &copy; 2019. Online Shop All rights reserved.<br/>
-      学生作业,不用于商业用途
+        Copyright &copy; 2019. Online Shop All rights reserved.<br />
+        学生作业,不用于商业用途
       </footer>
     </div>
   </body>

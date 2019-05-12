@@ -69,21 +69,55 @@
   display: block;
   float: right;
 }
-#wrapper footer {
-  margin: 5px 0px 5px 0px;
-  text-align: center;
+#wrapper #banner_box {
+  float: clear;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  background-color: rgb(248, 245, 245);
+  padding: 10px 15px;
+  border-radius: 20px;
+  height: 350px;
+}
+#wrapper #banner_box #banner_image {
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px gray;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  float: left;
+  height: 350px;
+}
+#wrapper #banner_box #banner_image:hover {
+  box-shadow: 0px 0px 10px lightcoral;
+  transition: box-shadow 0.2s ease;
+}
+#wrapper #banner_box a {
+  text-decoration: none;
+  color: black;
+}
+#wrapper #banner_box a:hover {
+  text-shadow: 1px 1px 10px lightgray;
+  transition: text-shadow 0.2s ease;
+}
+#wrapper #banner_box #banner_description {
+  padding: auto;
+  display: block;
+}
+#wrapper #banner_box #banner_description_header {
+  font-size: 2em;
+  line-height: 80px;
+  font-weight: bold;
+}
+#wrapper #banner_box #banner_description_content {
+  font-size: auto;
 }
 #wrapper main {
   float: clear;
   text-align: center;
 }
-#wrapper #banner {
-  margin-bottom: 5px;
-}
 #wrapper main .items {
   border: 1px solid lightgray;
   width: 49%;
-  height: 200px;
   display: inline-block;
   margin-bottom: 10px;
 }
@@ -94,10 +128,11 @@
 #wrapper main .items span {
   line-height: 200px;
 }
-#wrapper main #item_second,
-#wrapper main #item_fourth {
+#wrapper main #item_second, #wrapper main #item_fourth {
   margin-left: 7px;
 }
 #wrapper footer {
   float: clear;
+  margin: 5px 0px 5px 0px;
+  text-align: center;
 }
