@@ -1,7 +1,6 @@
 var i = 1;
-var h2, h3;
 var bimg, blink, bheader, bcontent, bnumber, bbox;
-var timer;
+var timer_changeImage, timer_setAndShow;
 var bannerNames = ["", "牛仔裙", "金米欧手表", "格子衬衫"];
 var bannerContent = [
   "",
@@ -18,36 +17,31 @@ function init() {
   bnumber = document.getElementById("banner_page_number");
   bbox = document.getElementById("banner_box");
   bbox.onmouseover = function() {
-    clearInterval(timer);
+    clearInterval(timer_changeImage);
   };
   bbox.onmouseout = function() {
-    timer = setInterval("changeImage()", 6000);
+    timer_changeImage = setInterval("changeImage()", 6000);
   };
-  set();
-  timer = setInterval("changeImage()", 6000);
-}
-
-function changeImage() {
-  if (++i > 3) i = 1;
-  hide();
-  h2 = setInterval("set()", 600);
-  h3 = setInterval("show()", 600);
-}
-
-function set() {
   bimg.src = "image/banner_" + i + ".jpg";
   blink.href = "#banner_" + i;
   bheader.innerText = bannerNames[i];
   bcontent.innerHTML = bannerContent[i];
   bnumber.innerText = i;
-  clearInterval(h2);
+  timer_changeImage = setInterval("changeImage()", 6000);
 }
 
-function hide() {
+function changeImage() {
+  if (++i > 3) i = 1;
   bbox.style = "opacity: 0";
+  timer_setAndShow = setInterval("setAndShow()", 800);
 }
 
-function show() {
+function setAndShow() {
+  bimg.src = "image/banner_" + i + ".jpg";
+  blink.href = "#banner_" + i;
+  bheader.innerText = bannerNames[i];
+  bcontent.innerHTML = bannerContent[i];
+  bnumber.innerText = i;
   bbox.style = "opacity: 1";
-  clearInterval(h3);
+  clearInterval(timer_setAndShow);
 }

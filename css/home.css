@@ -14,6 +14,7 @@
 #wrapper nav {
   background-color: rgb(248, 245, 245);
   margin-bottom: 10px;
+  border-radius: 7px;
 }
 #wrapper nav ul {
   list-style-type: none;
@@ -22,24 +23,26 @@
 #wrapper nav #useroptions {
   float: right;
   display: block;
-  margin-top: -30px;
+  margin-top: -40px;
+  background-color: rgb(248, 245, 245);
+  border-radius: 7px;
+  padding: 5px 0px;
 }
 #wrapper nav #useroptions a {
-  text-decoration: none;
-  color: black;
   padding: 5px 10px;
+  text-decoration: none;
   border-radius: 7px;
-  transition: background-color 0.2s linear, color 0.2s linear;
+  transition: background-color 0.2s linear;
+  color: black;
 }
 #wrapper nav #useroptions a:hover {
-  background-color: blue;
-  color: white;
+  background-color: lightgreen;
 }
 #wrapper nav ul li {
   transition: background-color 0.3s ease;
   display: inline-block;
   margin: 0px 5px 0px 0px;
-  border-radius: 3px;
+  border-radius: 7px;
   width: 100px;
   text-align: center;
   line-height: 40px;
@@ -65,12 +68,12 @@
   padding: 7px 10px 7px 10px;
   margin: 5px 5px 5px 2px;
   border-radius: 7px;
-  border: 1px solid #66c56a;
+  border: 1px solid gray;
   color: black;
   transition: background-color 0.1s linear, color 0.1s linear;
 }
 #wrapper nav input[type="submit"]:hover {
-  background-color: #66c56a;
+  background-color: blue;
   color: white;
 }
 #wrapper nav #ser {
