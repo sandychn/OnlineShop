@@ -7,7 +7,7 @@
     <link href="css/items.css" rel="stylesheet" type="text/css" />
     <title>Online Shop :: Women</title>
   </head>
-  <body onload="init()">
+  <body onload="init();">
     <div id="wrapper">
       <header>
         <a href="index.html">
@@ -21,13 +21,32 @@
           <a href="#register">注 册</a>
         </span>
         <ul>
-          <li><a href="index.html">主页</a></li>
-          <li><a href="men.html">男装</a></li>
-          <li id="nowpage"><a href="women.html">女装</a></li>
-          <li><a href="watches.html">饰品</a></li>
+          <li id="nowpage"><a href="index.html">主页</a></li>
+          <li>
+            <a href="men.html">男装</a>
+            <ul>
+              <li><a href="men.html#shirt">衬衫</a></li>
+              <li><a href="men.html#underwaist">背心</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="women.html">女装</a>
+            <ul>
+              <li><a href="women.html#skirt">裙子</a></li>
+              <li><a href="women.html#top">上衣</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="ornaments.html">饰品</a>
+            <ul>
+              <li><a href="ornaments.html#watch">手表</a></li>
+              <li><a href="ornaments.html#bracelet">手环</a></li>
+            </ul>
+          </li>
           <form id="ser" action="index.html" method="GET">
             <input
               type="search"
+              id="search_keyword"
               name="search_keyword"
               required="required"
               placeholder="请输入搜索内容"
@@ -38,78 +57,77 @@
           </form>
         </ul>
       </nav>
-
       <main>
-        <div><img src="image/qun.png" /></div>
-        <div class="items" id="item_first">
-          <div>
-            <img src="image/wp1.jpg" alt="" />
-            <h4>裙子1</h4>
-            <h5>$100.00</h5>
-          </div>
+        <div><img class="itemTypeImage" src="image/qun.png" id="skirt" /></div>
+        <div class="items">
+          <img src="image/wp1.jpg" alt="" />
+          <div id="item_name">裙子1</div>
+          <div id="item_price">¥100.00</div>
         </div>
-        <div class="items" id="item_second">
-          <img src="image/wp3.jpg" alt="" />
-          <h4>裙子2</h4>
-          <h5>$100.00</h5>
-        </div>
-        <div class="items" id="item_third">
+        <div class="items">
           <img src="image/wp2.jpg" alt="" />
-          <h4>裙子3</h4>
-          <h5>$100.00</h5>
+          <div id="item_name">裙子2</div>
+          <div id="item_price">¥100.00</div>
         </div>
-        <div class="items" id="item_fourth">
+        <div class="items">
+          <img src="image/wp3.jpg" alt="" />
+          <div id="item_name">裙子3</div>
+          <div id="item_price">¥100.00</div>
+        </div>
+        <div class="items">
           <img src="image/wp4.jpg" alt="" />
-          <h4>裙子4</h4>
-          <h5>$100.00</h5>
+          <div id="item_name">裙子4</div>
+          <div id="item_price">¥100.00</div>
         </div>
-        <div class="items" id="item_fifth">
+        <div class="items">
           <img src="image/wp5.jpg" alt="" />
-          <h4>裙子5</h4>
-          <h5>$100.00</h5>
+          <div id="item_name">裙子5</div>
+          <div id="item_price">¥100.00</div>
         </div>
-        <div class="items" id="item_sixth">
+        <div class="items">
           <img src="image/wp6.jpg" alt="" />
-          <h4>裙子6</h4>
-          <h5>$100.00</h5>
+          <div id="item_name">裙子6</div>
+          <div id="item_price">¥100.00</div>
         </div>
-        <div class="items" id="item_seventh">
+        <div class="items">
           <img src="image/wp7.jpg" alt="" />
-          <h4>裙子7</h4>
-          <h5>$100.00</h5>
+          <div id="item_name">裙子7</div>
+          <div id="item_price">¥100.00</div>
         </div>
-        <div class="items" id="item_eight">
+        <div class="items">
           <img src="image/wp8.jpg" alt="" />
-          <h4>裙子8</h4>
-          <h5>$100.00</h5>
+          <div id="item_name">裙子8</div>
+          <div id="item_price">¥100.00</div>
         </div>
-        <div class="items" id="item_ninth">
+        <div class="items">
           <img src="image/wp9.jpg" alt="" />
-          <h4>裙子9</h4>
-          <h5>$100.00</h5>
+          <div id="item_name">裙子9</div>
+          <div id="item_price">¥100.00</div>
         </div>
-        <div><img src="image/shangyi.png" /></div>
+        <div>
+          <img class="itemTypeImage" src="image/shangyi.png" id="top" />
+        </div>
         <div class="items" id="item_first">
           <div>
             <img src="image/tp5.jpg" alt="" />
-            <h4>上衣1</h4>
-            <h5>$100.00</h5>
+            <div id="item_name">上衣1</div>
+            <div id="item_price">¥100.00</div>
           </div>
         </div>
         <div class="items" id="item_second">
           <img src="image/tp6.jpg" alt="" />
-          <h4>上衣2</h4>
-          <h5>$100.00</h5>
+          <div id="item_name">上衣2</div>
+          <div id="item_price">¥100.00</div>
         </div>
         <div class="items" id="item_third">
           <img src="image/tp7.jpg" alt="" />
-          <h4>上衣3</h4>
-          <h5>$100.00</h5>
+          <div id="item_name">上衣3</div>
+          <div id="item_price">¥100.00</div>
         </div>
         <div class="items" id="item_fourth">
           <img src="image/tp8.jpg" alt="" />
-          <h4>上衣4</h4>
-          <h5>$100.00</h5>
+          <div id="item_name">上衣4</div>
+          <div id="item_price">¥100.00</div>
         </div>
       </main>
       <footer>
