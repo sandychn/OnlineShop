@@ -2,12 +2,15 @@
 <html lang="zh">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <link href="css/home.css" rel="stylesheet" type="text/css" />
     <link href="css/items.css" rel="stylesheet" type="text/css" />
+    <link href="css/aside.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery183.min.js" type="text/javascript"></script>
+    <script src="js/aside.js" type="text/javascript"></script>
     <title>Online Shop :: Watches</title>
   </head>
-  <body>
+  <body onload="init_aside();">
     <div id="wrapper">
       <header>
         <a href="index.html">
@@ -135,5 +138,13 @@
         本网页为学生作业, 不用于商业用途
       </footer>
     </div>
+    <aside>
+      <img
+        src="image/gotoTop.jpg"
+        id="gotoTopImage"
+        alt="回到顶部"
+        title="回到顶部"
+      />
+    </aside>
   </body>
 </html>
