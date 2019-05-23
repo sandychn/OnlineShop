@@ -186,15 +186,14 @@
   font-size: 150%;
   margin-bottom: 10px;
   text-align: left;
+  
 }
 #wrapper main #item_block img {
   width: 45%;
   margin: 3px;
-  border: 1px solid white;
   border-radius: 5px;
 }
 #wrapper main #item_block img:hover {
-  border-color: lightgray;
   opacity: 0.8;
 }
 #wrapper footer {
