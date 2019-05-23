@@ -171,6 +171,32 @@
   float: clear;
   text-align: center;
 }
+#wrapper main #item_block {
+  width: 45%;
+  height: auto;
+  border: 2px solid rgb(248, 245, 245);
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: 3px;
+}
+#wrapper main #item_block_name {
+  font-weight: bold;
+  font-size: 150%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+#wrapper main #item_block img {
+  width: 45%;
+  margin: 3px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+#wrapper main #item_block img:hover {
+  border-color: lightgray;
+  opacity: 0.8;
+}
 #wrapper footer {
   margin: 5px 0px 5px 0px;
   text-align: center;
