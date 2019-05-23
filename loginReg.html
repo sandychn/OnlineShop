@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+    <title>Online Shop :: 登录</title>
+  </head>
+  <body onload="initReg();">
+    <div id="wrapper">
+      <header>
+        <a href="index.html">
+          <img id="logo" src="image/logo.png" alt="Online Shop" width="300px" />
+        </a>
+      </header>
+      <nav>
+        <span id="useroptions">
+          <a href="cart.html">购物车</a>&nbsp;&nbsp;
+          <a href="loginReg.html">登 录</a>&nbsp;&nbsp;
+          <a href="loginReg.html?register=1">注 册</a>
+        </span>
+        <ul>
+          <li><a href="index.html">主页</a></li>
+          <li>
+            <a href="men.html">男装</a>
+            <ul>
+              <li><a href="men.html#shirt">衬衫</a></li>
+              <li><a href="men.html#underwaist">背心</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="women.html">女装</a>
+            <ul>
+              <li><a href="women.html#skirt">裙子</a></li>
+              <li><a href="women.html#top">上衣</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="ornaments.html">饰品</a>
+            <ul>
+              <li><a href="ornaments.html#watch">手表</a></li>
+              <li><a href="ornaments.html#bracelet">手环</a></li>
+            </ul>
+          </li>
+          <form id="ser" action="index.html" method="GET">
+            <input
+              type="search"
+              id="search_keyword"
+              name="search_keyword"
+              required="required"
+              placeholder="请输入搜索内容"
+              size="30"
+              maxlength="50"
+            />
+            <input type="submit" value="搜  索" />
+          </form>
+        </ul>
+      </nav>
+      <div id="heart_inner">
+        <div id="log" class="log_reg">
+          <div id="log_head">
+            <h4><strong>现在登录</strong></h4>
+          </div>
+          <div id="log_inner">
+            <form action="#" method="post" id="">
+              <div id="log_username" class="input-group">
+                <img
+                  src="image/user.png"
+                  width="25px"
+                  height="25px"
+                />
+                <input
+                  type="text"
+                  class="new_form_control"
+                  placeholder="用户名"
+                />
+              </div>
+              <div id="log_pwd" class="input-group">
+                <img
+                  src="image/pasw.png"
+                  width="25px"
+                  height="25px"
+                />
+                <input
+                  type="password"
+                  class="new_form_control"
+                  placeholder="密码"
+                />
+              </div>
+              <button type="button" id="btn_log" class="btn" onclick="login()">
+                <h4>登&nbsp;录</h4>
+              </button>
+            </form>
+          </div>
+          <div id="log_foot">
+            <span>
+              <a href="" onClick="window.open('changePw.html')" id="op">修改密码</a>
+            </span>
+            <span>
+              <a href="loginReg.html?register=1" onclick="logReg()" id="op">现在注册</a>
+            </span>
+          </div>
+        </div>
+        <div id="reg" class="log_reg">
+          <div id="reg_head">
+            <h4><strong>欢迎注册</strong></h4>
+          </div>
+          <div id="reg_inner">
+            <div id="reg_phone" class="input-group">
+              <input
+                type="text"
+                class="new_form_control"
+                placeholder="手机号"
+              />
+            </div>
+            <div id="reg_verifyCode" class="input-group">
+              <input type="text" class="input_reg" placeholder="验证码" />
+              <span class="input-group-btn">
+                <button id="btn_reg_getVerifyCode" type="button">
+                  获取验证码
+                </button>
+              </span>
+            </div>
+            <button id="btn_reg" type="button" onClick="reg()">
+              <h4>注&nbsp;册</h4>
+            </button>
+          </div>
+          <div id="reg_foot">
+            <a href="loginReg.html" onclick="regLog()" id="op">已有账号？现在登录！</a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        Copyright &copy; 2019. Online Shop All rights reserved.<br />
+        本网页为学生作业, 不用于商业用途
+      </footer>
+    </div>
+    <script src="js/log.js"></script>
+  </body>
+</html>

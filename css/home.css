@@ -52,7 +52,7 @@
 #wrapper nav ul li:hover > ul {
   display: block;
   position: absolute;
-  padding-top: 5px;
+  padding-top: 3px;
   z-index: 30;
 }
 #wrapper nav ul li:hover > ul li {
