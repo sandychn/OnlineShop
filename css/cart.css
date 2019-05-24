@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.block {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.box_ul {
+  width: 100%;
+  height: 30px;
+  border: 0 solid black;
+  line-height: 30px;
+}
+.box_ul > li {
+  list-style: none;
+  display: inline-block;
+  width: 110px;
+  font-weight: bold;
+}
+.list_ul {
+  width: 100%;
+  height: auto;
+  display: block;
+  height: 150px;
+}
+.list_ul:hover {
+  background-color: rgb(248, 245, 245);
+}
+.list_ul > li {
+  border: 0px solid red;
+  display: inline-block;
+  list-style: none;
+  width: 110px;
+  text-align: center;
+  line-height: 150px;
+  position: relative;
+}
+.cimg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50%;
+  margin-top: -50%;
+  width: 110px;
+  height: 110px;
+}
+.jian,
+.jia {
+  width: 20px;
+}
+.txt {
+  width: 40px;
+  outline: none;
+  text-align: center;
+}
+.box_down {
+  margin: 5px;
+}
+.box_left {
+  float: left;
+  margin-bottom: 30px;
+}
+.box_right {
+  float: right;
+  margin-bottom: 30px;
+}
+footer {
+  clear: both;
+}
+.all_del,
+.pay {
+  background-color: rgb(248, 245, 245);
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+.all_del:hover,
+.pay:hover {
+  background-color: rgb(248, 40, 17);
+  color: white;
+}
+.all_price {
+  margin-right: 5px;
+}
+.del {
+  color: darkorange;
+}
+.del:hover {
+  color: blue;
+}
+#col_checkbox {
+  width: 50px;
+}
