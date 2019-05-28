@@ -58,7 +58,7 @@ function init_slider() {
     }
   });
   for (var i = 0; i < imgCount; ++i) {
-    imgs.eq(i).mouseover(function() {
+    imgs.eq(i).mouseenter(function() {
       clearInterval(timer);
     });
     imgs.eq(i).mouseout(function() {
