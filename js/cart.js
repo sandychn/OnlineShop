@@ -82,9 +82,7 @@ window.onload = function() {
   //添加小计事件
   function smallprice() {
     for (var i = 0; i < price.length; i++) {
-      small_price[i].innerHTML = (
-        txt[i].value * parseFloat(price[i].innerHTML)
-      ).toFixed(2);
+      small_price[i].innerHTML = (txt[i].value * parseFloat(price[i].innerHTML)).toFixed(2);
     }
   }
 

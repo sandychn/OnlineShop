@@ -2,14 +2,14 @@ var logId;
 var regId;
 function logReg() {
   logId.style = "display: none";
-	regId.style = "display: block";
+  regId.style = "display: block";
 }
 function regLog() {
   logId.style.display = "display: block";
   regId.style.display = "display: none";
 }
 function login() {
-	alert("恭喜您，登录成功");
+  alert("恭喜您，登录成功");
 }
 function reg() {
   alert("恭喜您，注册成功");
@@ -29,9 +29,9 @@ function initReg() {
   regId = document.getElementById("reg");
   var tmp = GetQueryString("register");
   if (tmp == 1) {
-		logReg();
-		document.title = "Online Shop :: 注册";
-	} else {
-		document.title = "Online Shop :: 登录";
-	}
+    logReg();
+    document.title = "Online Shop :: 注册";
+  } else {
+    document.title = "Online Shop :: 登录";
+  }
 }

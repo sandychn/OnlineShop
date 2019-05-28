@@ -116,67 +116,6 @@ li {
   color: white;
 }
 
-/* slider images */
-#slider {
-  overflow: hidden;
-}
-#slider #carousel {
-  margin: 0 auto;
-  position: relative;
-  height: auto;
-  width: 100%;
-  text-align: center;
-}
-#slider #carousel ul {
-  transition: transform .75s ease-in-out;
-}
-#slider #carousel ul li {
-  display: inline-block;
-}
-#slider #carousel img {
-  height: 300px;
-  width: auto;
-  box-shadow: 1px 1px 5px gray;
-  cursor: pointer;
-  border-radius: 20px;
-  margin: 10px 30px 10px 0;
-}
-#slider #carousel img:hover {
-  box-shadow: 1px 1px 10px red;
-}
-
-/* sliderNav */
-#sliderNav {
-  position: relative;
-  height: auto;
-  padding: 10px 0;
-  text-align: center;
-}
-#sliderNav ul li {
-  cursor: pointer;
-  overflow: hidden;
-  display: inline-block;
-  width: 22px;
-  margin: 0 2px;
-}
-#sliderNav ul li a {
-  margin: 0 auto;
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  background: #5e6671;
-  font-size: 0;
-  transition: background 0.5s ease-in-out, width 0.5s ease-in-out;
-}
-#sliderNav ul li:hover a {
-  background: #00aeff;
-}
-#sliderNav ul li.on a {
-  width: 20px;
-  background: #00aeff;
-}
-
 /* main */
 #wrapper main {
   clear: both;
