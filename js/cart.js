@@ -23,24 +23,23 @@ window.onload = function() {
     //添加数量事件
     jian[i].index = i; //标记对象索引
     jian[i].onclick = function() {
-      var val = txt[this.index].value;
+      var val = txt[this.index].innerHTML;
       val--;
       if (val <= 0) {
         val = 1;
       }
-      txt[this.index].value = val;
+      txt[this.index].innerHTML = val;
       smallprice();
       allprice();
     };
     jia[i].index = i;
     jia[i].onclick = function() {
-      var val = txt[this.index].value;
+      var val = txt[this.index].innerHTML;
       val++;
-      txt[this.index].value = val;
+      txt[this.index].innerHTML = val;
       smallprice();
       allprice();
     };
-
     //添加选项框点击事件
     btn[i].onclick = function() {
       allprice();
@@ -50,7 +49,7 @@ window.onload = function() {
     pay.onclick = function() {
       for (var i = 0; i < small_price.length; ++i) {
         if (btn[i].checked) {
-          alert("您一共消费" + all_price.innerHTML + "元");
+          alert("您一共消费" + all_price.innerHTML);
           return;
         }
       }
@@ -82,7 +81,8 @@ window.onload = function() {
   //添加小计事件
   function smallprice() {
     for (var i = 0; i < price.length; i++) {
-      small_price[i].innerHTML = (txt[i].value * parseFloat(price[i].innerHTML)).toFixed(2);
+      var tmp = parseInt(txt[i].innerHTML);
+      small_price[i].innerHTML = (tmp * parseFloat(price[i].innerHTML)).toFixed(2);
     }
   }
 

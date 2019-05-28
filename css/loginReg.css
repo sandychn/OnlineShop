@@ -1,0 +1,108 @@
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.input-group {
+  line-height: 45px;
+}
+#heart_inner {
+  width: 100%;
+  height: 550px;
+  border-top: 1px solid transparent;
+  background: url("../image/log.jpg") no-repeat 0 0;
+  background-size: cover;
+  text-align: center;
+}
+#log_inner img {
+  vertical-align: middle;
+}
+.log_reg {
+  width: 350px;
+  height: 400px;
+  background: #fff;
+  margin: 70px 70px 0 auto;
+  border-top: 1px solid transparent;
+  position: relative;
+}
+#log {
+  display: block;
+}
+#log_head {
+  height: 50px;
+  width: 320px;
+  margin: 20px auto;
+  border-top: 1px solid transparent;
+}
+#log_inner {
+  width: 320px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.new_form_control {
+  margin-left: 10px;
+  width: 80%;
+  height: 30px;
+}
+#log_pwd {
+  margin: 30px 0 0 0;
+}
+#btn_log {
+  margin: 30px 0 0 0;
+  width: 300px;
+  height: 45px;
+  color: #fff;
+  background: #e03636;
+}
+#btn_log:focus {
+  background-color: #9c1515;
+}
+#log_foot {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+#log_foot span {
+  margin-left: 8px;
+}
+#reg {
+  display: none;
+}
+#reg_head {
+  height: 50px;
+  margin-top: 20px;
+  border-top: 1px solid transparent;
+}
+#reg_inner {
+  height: 200px;
+  margin: 0 auto;
+}
+.input-group-btn {
+  width: auto;
+}
+#btn_reg {
+  margin: 30px auto;
+  width: 280px;
+  height: 45px;
+  color: #fff;
+  background: #e03636;
+}
+#btn_reg:focus {
+  background-color: #9c1515;
+}
+#reg_foot {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+#op:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.new_form_controlo {
+  width: 240px;
+  height: 30px;
+}

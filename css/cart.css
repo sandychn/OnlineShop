@@ -51,7 +51,8 @@
   width: 20px;
 }
 .txt {
-  width: 40px;
+  width: 30px;
+  display: inline-block;
   outline: none;
   text-align: center;
 }
