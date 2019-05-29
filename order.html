@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="css/order.css" rel="stylesheet" type="text/css" />
+    <link href="css/aside.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery183.min.js" type="text/javascript"></script>
+    <script src="js/aside.js" type="text/javascript"></script>
+    <style></style>
+    <title>Online Shop :: Home</title>
+  </head>
+  <body onload="init_aside(); ">
+    <div id="wrapper">
+      <header>
+        <a href="index.html">
+          <img id="logo" src="image/logo.png" alt="Online Shop" width="300px" />
+        </a>
+      </header>
+      <nav>
+        <span id="useroptions">
+          <a href="cart.html">购物车</a>&nbsp;&nbsp; <a href="loginReg.html">登 录</a>&nbsp;&nbsp;
+          <a href="loginReg.html?register=1">注 册</a>
+        </span>
+        <ul>
+          <li><a href="index.html">主页</a></li>
+          <li>
+            <a href="men.html">男装</a>
+            <ul>
+              <li><a href="men.html#shirt">衬衫</a></li>
+              <li><a href="men.html#underwaist">背心</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="women.html">女装</a>
+            <ul>
+              <li><a href="women.html#skirt">裙子</a></li>
+              <li><a href="women.html#top">上衣</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="ornaments.html">饰品</a>
+            <ul>
+              <li><a href="ornaments.html#watch">手表</a></li>
+              <li><a href="ornaments.html#bracelet">手环</a></li>
+            </ul>
+          </li>
+          <form id="ser" action="index.html" method="GET">
+            <input type="search" id="search_keyword" name="search_keyword" required="required" placeholder="请输入搜索内容" size="30" maxlength="50" />
+            <input type="submit" value="搜  索" />
+          </form>
+        </ul>
+      </nav>
+      <main style="text-align: left;">
+        <h1 style="text-align: center; margin-bottom: 20px;">订单信息</h1>
+        <form method="get" action="alipay2.html">
+          <ul>
+            <li>收货地址：<input type="text" name="address" size="30" required="required" /></li>
+            <li>姓　　名：<input type="text" name="name" size="30" required="required" /></li>
+            <li>电话号码：<input type="number" name="tel" size="30" required="required" /></li>
+            <li>商品信息：</li>
+          </ul>
+          <table frame="hsides" style="margin: 20px auto 0px auto; text-align:center;">
+            <tr height="35">
+              <td width="300">商品</td>
+              <td width="100">名称</td>
+              <td width="100">尺寸</td>
+              <td width="200">数量</td>
+              <td width="200">价格</td>
+            </tr>
+            <tr>
+              <td width="300"><img src="image/slider/banner_1.jpg" width="200" height="120" />&nbsp;</td>
+              <td width="100">裙子</td>
+              <td>L&nbsp;</td>
+              <td width="200">1&nbsp;</td>
+              <td width="200">100元&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="200"><img src="image/slider/banner_3.jpg" width="200" height="120" />&nbsp;</td>
+              <td width="100">格子衬衫</td>
+              <td>XL&nbsp;</td>
+              <td width="200">2&nbsp;</td>
+              <td width="200">200元&nbsp;</td>
+            </tr>
+          </table>
+
+          <div id="submit_button">
+            <input type="submit" value="提交订单" />
+            <a href="index.html" id="cancel"><span>取消订单</span></a>
+          </div>
+        </form>
+      </main>
+      <footer>
+        <div id="footer_nav">
+          <ul>
+            <li id="footer_home">
+              <ul>
+                <li>
+                  <a href="index.html"><h2>OnlineShop</h2></a>
+                </li>
+                <li>
+                  福建省福州市鼓楼区东街口<br />
+                  <i>0591-12345678</i>
+                </li>
+              </ul>
+            </li>
+            <li id="footer_men">
+              <ul>
+                <li>
+                  <a href="men.html"><h2>男装</h2></a>
+                </li>
+                <li><a href="men.html#shirt">衬衫</a></li>
+                <li><a href="men.html#underwaist">背心</a></li>
+              </ul>
+            </li>
+            <li id="footer_women">
+              <ul>
+                <li>
+                  <a href="women.html"><h2>女装</h2></a>
+                </li>
+                <li><a href="women.html#skirt">裙子</a></li>
+                <li><a href="women.html#top">上衣</a></li>
+              </ul>
+            </li>
+            <li id="footer_ornaments">
+              <ul>
+                <li>
+                  <a href="ornaments.html"><h2>饰品</h2></a>
+                </li>
+                <li><a href="ornaments.html#watch">手表</a></li>
+                <li><a href="ornaments.html#bracelet">手环</a></li>
+              </ul>
+            </li>
+            <li id="footer_user">
+              <ul>
+                <li>
+                  <h2>个人中心</h2>
+                  <ul>
+                    <li><a href="cart.html">购物车</a></li>
+                    <li><a href="loginReg.html">登录</a></li>
+                    <li><a href="loginReg.html?register=1">注册</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        Copyright &copy; 2019. Online Shop All rights reserved.<br />
+        本网页为学生作业, 不用于商业用途
+      </footer>
+    </div>
+    <aside>
+      <img src="image/gotoTop.jpg" id="gotoTopImage" alt="回到顶部" title="回到顶部" />
+    </aside>
+  </body>
+</html>

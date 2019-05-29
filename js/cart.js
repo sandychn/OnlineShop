@@ -49,7 +49,7 @@ window.onload = function() {
     pay.onclick = function() {
       for (var i = 0; i < small_price.length; ++i) {
         if (btn[i].checked) {
-          alert("您一共消费" + all_price.innerHTML);
+          window.location.href = "order.html";
           return;
         }
       }

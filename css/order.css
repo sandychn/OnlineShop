@@ -1,0 +1,40 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body form ul {
+	list-style-type: none;
+}
+body form ul li {
+	margin: 10px 0px 0px 30px;
+}
+
+#submit_button {
+	margin: 10px auto 0 auto;
+	display: block;
+text-align:center;
+}
+#submit_button input {
+	display: inline-block;
+line-height:40px;width:100px;border: 1px solid black; border-radius: 10px;background-color: rgb(248, 245, 245);
+margin: 0px 10px;
+font-size: 85%;}
+
+#submit_button>#cancel {
+	display: inline-block;
+line-height:40px;width:100px;border: 1px solid black; border-radius: 10px;background-color: rgb(248, 245, 245);
+font-size: 85%;
+text-decoration: none;
+color: black;
+margin: 0px 10px;
+}
+
+#submit_button>a {
+	display: block;
+}
+
+#submit_button input:hover, #submit_button #cancel:hover { 
+color: white;
+background-color: blue;
+cursor: pointer;
+}
