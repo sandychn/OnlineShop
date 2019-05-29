@@ -1,5 +1,7 @@
 var asideDoucument;
 
+$(document).ready(init_aside);
+
 function init_aside() {
   asideDoucument = document.getElementById("gotoTopImage");
   asideDoucument.onmouseover = function() {
